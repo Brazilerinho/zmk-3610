@@ -1,0 +1,11 @@
+file_format: "1"
+id: leri
+name: Leri
+type: shield
+url: https://github.com/brazilerinho
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - leri_left
+  - leri_right

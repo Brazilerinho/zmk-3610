@@ -44,8 +44,9 @@
 			, <&pro_micro 9 GPIO_ACTIVE_HIGH>
             ;
     };
+};
 
-    &pinctrl {
+&pinctrl {
     spi0_default: spi0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
@@ -90,6 +91,4 @@
     compatible = "zmk,input-listener";
     device = <&trackball>;
   };
-};
-
 };

@@ -3,14 +3,20 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
     - name: inorichi
-      url-base: https://github.com/inorichi
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
+      remote: badjeff
+      revision: main
+    - name: zmk-split-peripheral-input-relay
+      remote: badjeff
+      revision: main
+    - name: zmk-input-behavior-listener
+      remote: badjeff
       revision: main
   self:
     path: config

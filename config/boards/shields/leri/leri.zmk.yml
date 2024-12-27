@@ -2,7 +2,7 @@ file_format: "1"
 id: leri
 name: Leri
 type: shield
-url: https://github.com/brazilerinho
+url: https://github.com/Brazilerinho/
 requires: [pro_micro]
 features:
   - keys

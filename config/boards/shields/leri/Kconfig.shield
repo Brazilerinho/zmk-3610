@@ -1,5 +1,5 @@
 config SHIELD_LERI_LEFT
-    def_bool $(shields_list_contains,leri_left)
+	def_bool $(shields_list_contains,leri_left)
 
 config SHIELD_LERI_RIGHT
-    def_bool $(shields_list_contains,leri_right)
+	def_bool $(shields_list_contains,leri_right)

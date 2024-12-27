@@ -1,17 +1,16 @@
-if SHIELD_LERI_LEFT
+if SHIELD_LERI_RIGHT
 
-# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Leri"
+	default "Leri"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
 
 endif
 
 if SHIELD_LERI_LEFT || SHIELD_LERI_RIGHT
 
 config ZMK_SPLIT
-    default y
-
+	default y
+	
 endif

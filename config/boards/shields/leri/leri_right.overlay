@@ -44,7 +44,7 @@
 
 / {
 	/* THIS make keymap binding happy only, nothing happen on peripheral side */
-	pd1: virtual_input {
+	vtrackball: virtual_input {
 		compatible = "zmk,virtual-input";
 	};
 

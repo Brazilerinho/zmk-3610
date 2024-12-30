@@ -50,12 +50,6 @@
         label = "KSCAN";
 
         diode-direction = "row2col";
-		row-gpios
-			= <&pro_micro 18 GPIO_ACTIVE_HIGH>
-			, <&pro_micro 5 GPIO_ACTIVE_HIGH>
-			, <&pro_micro 4 GPIO_ACTIVE_HIGH>
-			, <&pro_micro 9 GPIO_ACTIVE_HIGH>
-            ;
     };
 };
 
@@ -86,7 +80,7 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
 
-    pd0: trackball@0 {
+    pd0: pd@0 {
         status = "disabled";
         compatible = "pixart,pmw3610";
         reg = <0>;
@@ -97,11 +91,4 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
     };
-};
-
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&pd0>;
-  };
 };

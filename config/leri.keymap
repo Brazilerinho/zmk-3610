@@ -18,8 +18,8 @@
 };
 
 &trackball_listener {
-    
-}
+
+};
 
 / {
     keymap {

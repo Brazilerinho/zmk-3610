@@ -1,4 +1,5 @@
 #include "leri.dtsi"
+#include "trackball_common.dtsi"
 
 &kscan0 {
 	row-gpios
@@ -18,22 +19,7 @@
 		;
 };
 
-/ {
-	/* define virtual input, will be resurrected for emitting input event */
-	/* NOTE: set `device = <&pd1>` in `zmk,input-listener` */
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
+&trackball_listener {
+	status = "okay";
+}
 
-	/* for central side, define (relay-channel)-to-(virtual-input) mapping */
-	input_relay_config_102 {
-		compatible = "zmk,split-peripheral-input-relay";
-		
-		/* virtual input device on central, which used to emit input event as an agent device */
-		device = <&vtrackball>;
-		
-		/* channel id, used to filter incoming input event from split peripheral */
-		/* NOTE: should matching relay-channel on peripheral overlay */
-		relay-channel = <102>;		
-	};
-};

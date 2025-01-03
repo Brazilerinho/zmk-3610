@@ -17,10 +17,6 @@
     quick-tap-ms = <150>;
 };
 
-&trackball_listener {
-
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";

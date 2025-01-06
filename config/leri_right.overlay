@@ -1,3 +1,4 @@
+#include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
 #define INPUT_EV_KEY 0x01               /**< Key event */

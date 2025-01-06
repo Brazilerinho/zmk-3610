@@ -1,4 +1,4 @@
-if SHIELD_LERI_RIGHT
+if SHIELD_LERI_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Leri"
